@@ -1,0 +1,104 @@
+/*CSS DOCUMENT*/
+
+html, body, div, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit;} /*My edited version of the Eric Meyer’s reset tool. You may want to include this in all of your future CSS files. */
+
+figure {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+}
+
+img {
+    width: 100%; /*Please leave this line.*/
+     display: block;
+     padding-bottom: 3em;
+}
+
+figcaption {
+	font-style: italic;
+    padding: 1em 0.5em 0.25em;
+}
+
+div.container {
+    max-width: 60em;
+    margin: auto;
+    background-color: rgb(250, 250, 250);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+    padding-right: 3em;
+    padding-left: 2em;
+}
+
+body {
+	background-color: rgb(207, 207, 207); /* Not totally white. */
+	color: #353535;  /* Not totally black. */
+	line-height: 180%; 	/* A little extra leading. */
+	font-family: sans-serif;
+}
+
+h1 {
+	background-color: #ff8800;
+	color: #fafafa; /* Same as body background. */
+	font-size: 2.5em;
+	padding: 1em 0.5em 0.25em; /* You want three values. */
+	font-family: Sutro, sans-serif;
+    font-weight: 700;
+	text-transform: capitalize;
+    letter-spacing: 0.02;
+    line-height: 1em;
+}
+
+h2 {
+	background-color: #ff8800;
+	color: #fafafacb;
+	font-size: 2em;
+	padding: 0.75em;
+	font-family: Sutro, serif;
+	font-weight: thin;
+    grid-column: 1/3;
+    border-top: 16px solid #ff8800;
+}
+
+h3 {
+	margin: 1em 0.7em 1em; /*Three values again. You got the idea.*/
+	padding-top: 0em;
+    font-family: Sutro, serif;
+	font-size: 1.5em;
+	color: #ff8800;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.07em; /*Just an extra tracking for bold uppercase letters. Try 0.1em */
+}
+
+li {
+    margin: 1em 1.5em 1em;
+    padding: 0em;
+    font-family: poppins, sans-serif;
+    font-weight: 500;
+}
+
+ul {
+    margin: 1em;
+    padding: 0em;
+    font-family: poppins, sans-serif;
+}
+
+.ingredients {
+    border-top: 2px solid rgb(255, 136, 0);
+}
+
+.directions {
+    border-top: 2px solid rgb(255, 136, 0);
+    padding-bottom: 3em;
+}
+
+footer {
+    background-color: #ff8800;
+    color: #fafafa;
+    padding: 1em;
+    font-size: 1em;
+}
+/*By the way, when we use the slash-asterisk combo, it’s a comment on the CSS and it’s meant for human beings. The machine knows it is not supposed to process anything until it finds a asterisk-slash combo that ends the comment on the CSS. */
