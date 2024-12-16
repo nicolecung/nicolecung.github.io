@@ -120,36 +120,34 @@ nav ul li a {
 	}
 	
 
-body {  
-	font-family: sans-serif;  
-	}  
-
 p.slogan {
 	font-size: 4em;
 	font-family: serif;
 	font-style: italic;
 	margin: 1em 0em 1.5em;
-	color: rgb(250, 250, 250);	
+	color: rgb(250, 250, 250);
 	}
+	
+body {
+	font-family: sans-serif;
+}
 
 footer {
-    position: absolute;
-    font: sans-serif;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 3rem; 
-    box-sizing: border-box;
-    padding: 1em 1em;
-    background: #ffff00;
-    }
-      
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem; 
+  box-sizing: border-box;
+  padding: 1em 1em;
+  background: rgb(255, 255, 84);
+}
+
 address {
-    font-style: normal;
-    color: rgb(234, 142, 57);
-    margin-top: 1.5em;
-          }
-      
+	color: rgb(237, 141, 52);
+	margin-top: 1.5em;
+	line-height: 0em;
+	}
+
 footer p {
-    margin: 0;
-    }
+	margin: 0;
+}
