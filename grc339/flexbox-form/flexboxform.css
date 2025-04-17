@@ -1,0 +1,91 @@
+/*CSS DOCUMENT*/
+
+body {
+	font-family: sans-serif;
+	line-height: 1.4em;
+	color: #222;
+	background-color: #fafafa;
+	box-sizing: border-box;
+}
+
+div.container {
+	max-width: 40em;
+	margin: auto;
+	padding: 1em;
+}
+
+section.personal-info ul li input[type="text"],
+section ul li input[type="email"],
+section ul li input[type="tel"],
+section ul li select {
+	flex: 4 0 auto;
+	box-sizing: border-box;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+section ul {
+	gap: 0.5em;
+}
+
+.personal-info ul li {
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-bottom: 0.5em;
+}
+
+.personal-info ul li label {
+	flex: 0 0 8em;
+}
+
+.order ul {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+
+.order ul li {
+	flex: 1 1 15em;
+}
+
+section {
+    background: #eee;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+section p {
+	margin-top: 0;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+textarea {
+	box-sizing: border-box;
+	display: block;
+	width: 100%;
+	height: 6em;
+	background: #fcfcfc;
+	border: 1px solid #e8e8e8;
+	padding: 0.4em;
+	font-family: sans-serif;
+	color: #777;
+	}
+
+button {
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+
+@media only screen and (min-width: 40em) {
+
+  div.container {
+	margin: auto;
+	}
+}
