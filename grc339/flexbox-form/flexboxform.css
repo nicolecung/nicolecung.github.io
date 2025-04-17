@@ -18,28 +18,26 @@ section.personal-info ul li input[type="text"],
 section ul li input[type="email"],
 section ul li input[type="tel"],
 section ul li select {
-	flex: 4 0 40em;
+	flex: 4 0 auto;
 	box-sizing: border-box;
-	width: 100%;
+	border: none;
+	margin: 0;
+	padding: 0;
 }
 
 section ul {
-	padding-left: 0;
-	display: flex;
-	margin: auto;
-	flex-wrap: wrap;
 	gap: 0.5em;
-	box-sizing: border-box;
-}
-
-.personal-info ul {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
 }
 
 .personal-info ul li {
-	flex: 0 0 3em;
+	display: flex;
+	align-items: center;
+	gap: 1em;
+	margin-bottom: 0.5em;
+}
+
+.personal-info ul li label {
+	flex: 0 0 8em;
 }
 
 .order ul {
