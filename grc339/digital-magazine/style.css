@@ -8,7 +8,7 @@ img {
 }
 
 .logo {
-    width: 3em;
+    width: 8em;
     height: auto;
     padding-bottom: 0.5em;
 }
@@ -19,14 +19,15 @@ div.container, div.home-container {
 }
 
 figcaption {
-    font-family: sans-serif;
+    font-family: "neulis-sans", sans-serif;
     color: #5d5f62;
     font-style: italic;
     margin: 0.25rem 0.5rem 2rem;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "tilt-warp", sans-serif;
+    background-color: #E3e4df;
 }
 
 section {
@@ -37,37 +38,37 @@ h1 {
 	font-size: 2.5em;
 	padding: 1em 0.5em 0.25em;
     font-weight: 700;
+    font-family: "neulis-sans", sans-serif;
 }
 
 h2 {
-	color: #55779a;
+	color: #5f77a3;
 	font-size: 2.5em;
-	font-family: serif;
+	font-family: "aboreto", serif;
 	font-weight: 600;
     margin-top: 0.3em;
 }
 
 section.SecondaryStoryTeaser h2 {
     font-size: 1.8em;
-    font-family: serif;
+    font-family: "aboreto", serif;
     margin: 0.1em;
-    font-style: bold;
 }
 
 section.TertiaryStoryTeaser h3 {
-    border-top: 1px solid #55779a;
+    border-top: 1px solid #5f77a3;
     font-size: 1.2em;
     padding-top: 0.5em;
     color: #55779a;
-	font-family: serif;
+	font-family: "tilt-warp", serif;
     font-weight: bold;
 }
 
 p {
-    font-family: sans-serif;
+    font-family: "neulis-sans", sans-serif;
     margin: 0.2em;
     margin-bottom: 1em;
-    color: #1e1e1e;
+    color: #232b3a;
     line-height: 1.2em;
 }
 
@@ -81,7 +82,7 @@ nav {
 
 nav ul li {
     list-style-type: none;
-    font-family: sans-serif;
+    font-family: "tilt-warp", sans-serif;
     font-weight: 600;
     font-size: 1.4em;
     margin: 0.2em 0em;
@@ -89,24 +90,24 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #55779a;
+    color: #232b3a;
 }
 
 aside {
-    background-color: #cccffa;
     padding: 0em 0.5em;
 }
 
 footer {
-    background-color: #55779a;
+    background-color: #232b3a;
     width: 100%;
     box-sizing: border-box;
 }
 
 footer p {
-    color: #ffffff;
+    color: #E3e4df;
     padding: 0.5em 0.5em;
     font-size: 1em;
+    font-family: "neulis-sans", sans-serif;
 }
 
 h1, h2, p {
