@@ -226,15 +226,15 @@ h1, h2, p {
     }
 }
 
-/* Newsletter Section Styles */
+/* NEWSLETTER SECTION */
 .newsletter {
-    padding: 2rem 1rem;
-    text-align: center;
-    max-width: 600px;
-    margin: 2rem auto;
-    background-color: #f5f6f3;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px #232b3a1a;
+  background-color: #f5f6f3;
+  padding: 2rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #232b3a1a;
+  text-align: center;
 }
 
 .newsletter h2 {
@@ -259,11 +259,13 @@ h1, h2, p {
 }
 
 .subscription-form input {
+    width: 100%;
     padding: 0.75rem;
     font-size: 1rem;
     border-radius: 4px;
     border: 1px solid #ccc;
     font-family: "neulis-sans", sans-serif;
+    box-sizing: border-box;
 }
 
 .subscription-form button {
@@ -283,70 +285,184 @@ h1, h2, p {
     background-color: #232b3a;
 }
 
-/* Photo Gallery Section */
-.photo-gallery {
-  padding: 2rem 1rem;
-  background-color: #f5f6f3;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px #232b3a1a;
-  text-align: center;
+input[type=text], input[type=email], input[type=submit] {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 0.1em solid #ccc;
+    box-sizing: border-box;
 }
 
-.photo-gallery h2 {
+.newsletter-box p {
+    color: #fff;
+}
+
+
+input[type=checkbox] {
+    display: initial;
+}
+
+input[type=submit] {
+    font-family: "tilted-warp", serif;
+    font-weight: 400;
+    font-size: 1em;
+    font-style: normal;
+    text-transform: uppercase;
+    background-color: rgb(37,65,43);
+    color: #fff;
+    border: none;
+    border-radius: 0.5em;
+}
+
+.submit {
+    padding: 0.5em;
+}
+
+/* PHOTO GALLERY SECTION */
+
+.photogallery {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+main.gallery {
+    position: relative;
+    overflow: hidden;
+    max-width: 40em;
+    min-width: 40em;
+    margin: auto;
+    aspect-ratio: 3/4;
+    margin-left: 20em;
+}
+
+main.gallery figure {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main.gallery figure img {
+    width: auto;
+    height: 50em;
+    object-fit: cover;
+    align-items: center;
+}
+
+nav.carousel {
+    display: grid;
+    grid-template-columns: repeat(9,1fr);
+    grid-gap: 0.5em;
+    grid-column: 1/4;
+    margin-left: 20em;
+}
+
+nav.carousel img {
+    width: 100%;
+    padding: 0.5em 0 0;
+    height: 7em;
+    width: 4em;
+}
+
+input {
+    display: none;
+}
+
+input:nth-of-type(1):checked ~ main figure:nth-of-type(1),
+input:nth-of-type(2):checked ~ main figure:nth-of-type(2),
+input:nth-of-type(3):checked ~ main figure:nth-of-type(3),
+input:nth-of-type(4):checked ~ main figure:nth-of-type(4),
+input:nth-of-type(5):checked ~ main figure:nth-of-type(5),
+input:nth-of-type(6):checked ~ main figure:nth-of-type(6),
+input:nth-of-type(7):checked ~ main figure:nth-of-type(7),
+input:nth-of-type(8):checked ~ main figure:nth-of-type(8),
+input:nth-of-type(9):checked ~ main figure:nth-of-type(9)
+
+{
+    opacity: 1;
+}
+
+.photogallery h2 {
   font-family: "aboreto", serif;
   font-size: 2em;
   color: #232b3a;
   margin-bottom: 1rem;
 }
 
-/* Gallery Grid */
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 1.5em;
-  justify-items: center;
-  align-items: stretch;
-  max-width: fit-content;
-}
-
-.gallery-grid figure {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px #232b3a1a;
-  overflow: hidden;
-  aspect-ratio: 3 / 4;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.gallery-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.gallery-grid img:hover {
-  transform: scale(1.03);
-}
-
-.gallery-grid figcaption {
+.photogallery figcaption {
   font-size: 1em;
   font-weight: bold;
   color: #666;
   padding: 0.5em;
 }
 
-@media (max-width: 768px) {
-  .gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+@media screen and (prefers-color-scheme: dark) {
+  body {
+    background-color: #1e1e1e;
+    color: #cccccc;
   }
-}
 
-@media (max-width: 480px) {
-  .gallery-grid {
-    grid-template-columns: 1fr;
+  figcaption, p, nav ul li a, .subscription-form label, .photogallery figcaption {
+    color: #cccccc;
+  }
+
+  h1, h2, h3, .photogallery h2, .newsletter h2 {
+    color: #cccccc;
+  }
+
+  nav ul li {
+    color: #cccccc;
+  }
+
+  footer {
+    background-color: #111111;
+  }
+
+  footer p {
+    color: #cccccc;
+  }
+
+  .newsletter {
+    background-color: #2c2c2c;
+    box-shadow: 0 2px 8px #ffffff0d;
+  }
+
+  .subscription-form input {
+    background-color: #333333;
+    color: #cccccc;
+    border: 1px solid #555;
+  }
+
+  .subscription-form button {
+    background-color: #444;
+    color: #cccccc;
+  }
+
+  input[type=text],
+  input[type=email] {
+    background-color: #2a2a2a;
+    color: #cccccc;
+    border: 0.1em solid #444;
+  }
+
+  input[type=submit] {
+    background-color: #161668;
+    color: #cccccc;
+  }
+
+  section.TertiaryStoryTeaser h3 {
+    border-top: 1px solid #aaa;
+    color: #cccccc;
+  }
+
+  nav.carousel img {
+    filter: brightness(0.9);
   }
 }
