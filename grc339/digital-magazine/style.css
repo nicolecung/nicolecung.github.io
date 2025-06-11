@@ -300,6 +300,31 @@ input[type=text], input[type=email], input[type=submit] {
     color: #fff;
 }
 
+.newsletter-options {
+	border: none;
+	margin: 1rem 0;
+	padding: 0;
+}
+
+.newsletter-options legend {
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+	color: #232b3a;
+}
+
+.newsletter-options label {
+	display: inline-flex;
+    flex-direction: row;
+    grid-column: 1/2;
+	align-items: left;
+	margin-bottom: 0.5rem;
+	cursor: pointer;
+}
+
+.newsletter-options input[type="checkbox"] {
+	transform: scale(1.2);
+	accent-color: #232b3a;
+}
 
 input[type=checkbox] {
     display: initial;
@@ -311,7 +336,7 @@ input[type=submit] {
     font-size: 1em;
     font-style: normal;
     text-transform: uppercase;
-    background-color: rgb(37,65,43);
+    background-color: #232b3a;
     color: #fff;
     border: none;
     border-radius: 0.5em;
@@ -447,6 +472,10 @@ input:nth-of-type(9):checked ~ main figure:nth-of-type(9)
     background-color: #3D4D66;
     box-shadow: 0 2px 8px #ffffff0d;
   }
+
+.newsletter-legend {
+    color: #ccc;
+}
 
   .subscription-form input {
     background-color: #333333;
