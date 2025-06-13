@@ -230,6 +230,7 @@ h1, h2, p {
     section.SecondaryStoryTeaser a p {
         flex: 0 0 4em;
     }
+
 }
 
 /* NEWSLETTER SECTION */
@@ -237,7 +238,8 @@ h1, h2, p {
   background-color: #f5f6f3;
   padding: 2rem;
   max-width: 600px;
-  margin: 2rem auto;
+  margin: auto;
+  margin-left: 0rem;
   border-radius: 8px;
   box-shadow: 0 2px 8px #232b3a1a;
 }
