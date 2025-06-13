@@ -35,6 +35,10 @@ section {
     margin-bottom: 2em;
 }
 
+nav a:hover {
+  color: #5d5f62;
+}
+
 h1 {
 	font-size: 2.5em;
 	padding: 1em 0.5em 0.25em;
@@ -236,7 +240,6 @@ h1, h2, p {
   margin: 2rem auto;
   border-radius: 8px;
   box-shadow: 0 2px 8px #232b3a1a;
-  text-align: center;
 }
 
 .newsletter h2 {
@@ -300,29 +303,33 @@ input[type=text], input[type=email], input[type=submit] {
     color: #fff;
 }
 
-.newsletter-options {
-	border: none;
-	margin: 1rem 0;
-	padding: 0;
+.newsletter h3 {
+	color: #232b3a;
+    font-family: "neulis-sans", serif;
+    font-size: 1em;
+    text-align: left;
 }
 
-.newsletter-options legend {
-	font-weight: bold;
-	margin-bottom: 0.5rem;
-	color: #232b3a;
+.newsletter-options {
+    border: none;
+    margin: 1rem 0;
+    padding: 0;
+    flex-direction: column;   
+    gap: 0.5rem;
 }
 
 .newsletter-options label {
-	display: inline-flex;
-    flex-direction: row;
-    grid-column: 1/2;
-	align-items: left;
-	margin-bottom: 0.5rem;
-	cursor: pointer;
+    padding-bottom: 0.5em;  
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.newsletter-section {
+    display: inline;
 }
 
 .newsletter-options input[type="checkbox"] {
-	transform: scale(1.2);
+	transform: scale(1.5);
 	accent-color: #232b3a;
 }
 
@@ -473,7 +480,7 @@ input:nth-of-type(9):checked ~ main figure:nth-of-type(9)
     box-shadow: 0 2px 8px #ffffff0d;
   }
 
-.newsletter-legend {
+.newsletter h3 {
     color: #ccc;
 }
 
