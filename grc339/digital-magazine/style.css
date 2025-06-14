@@ -405,6 +405,7 @@ nav.carousel {
     grid-gap: 0.5em;
     grid-column: 1/4;
     margin: auto;
+    padding-bottom: 2em;
 }
 
 nav.carousel img {
